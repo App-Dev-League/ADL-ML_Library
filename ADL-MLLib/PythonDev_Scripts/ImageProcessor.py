@@ -44,5 +44,7 @@ class ImageProcessor:
 			self.X.append(i)
 			self.y.append(l)
 		self.X = np.array(self.X).reshape(-1,image_width,image_height,1)
+		return [self.X,self.y]
 	def edgeDetect():
 		pass
+
